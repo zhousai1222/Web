@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>JUICE</title>
+
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.1.min.js"></script>
+    <script src="Kinect-1.8.0.js"></script>
+
+    <script src="js/libs/TweenLite.min.js"></script>
+    <script src="js/libs/EasePack.min.js"></script>
+
+    <script src="build/spp.min.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/src/FruitGame.js"></script>
+    <script src="js/src/Assets.js"></script>
+    <script src="js/src/AssetsManager.js"></script>
+    <script src="js/src/Collide.js"></script>
+    <script src="js/src/Fruit.js"></script>
+    <script src="js/src/Module_fruit.js"></script>
+    <script src="js/src/Module_bomb.js"></script>
+    <script src="js/src/Module_collide.js"></script>
+    <script src="js/src/Module_blade.js"></script>
+    <script src="js/src/Module_ui.js"></script>
+    <script src="js/src/Main.js"></script>
+
+    <style type="text/css">
+        .streamImageCanvas {
+            position: absolute;
+            width: 75%;
+            height: 100%;
+            top: 0;
+            left: 12.5%;
+            opacity: 0.0;
+        }
+
+            .streamImageCanvas.showing {
+                opacity: 0.5;
+                transition: opacity 0.5s;
+            }
+    </style>
+</head>
+<body>
+   
+    <canvas id="display" style="display: none">Your borwser does not suport html5 canvans!</canvas>
+    <canvas id="userViewerCanvas" class="streamImageCanvas"></canvas>
+    <canvas id="backgroundRemovalCanvas" class="streamImageCanvas"></canvas>
+
+</body>
+</html>
