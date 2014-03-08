@@ -1,8 +1,4 @@
-var FruitGame = FruitGame || {
-	REVISION: '1',
-	AUTHOR: "flashhawk",
-	GITHUB: "https://github.com/flashhawk"
-};
+var FruitGame;
 
 var gameWidth = window.innerWidth;
 var gameHeight = window.innerHeight;
